@@ -1,0 +1,12 @@
+<launch>
+    <arg name="use_EKF" default="0"/>
+    <arg name="model" default="quadrotor"/>
+
+    <group ns="$(arg model)">
+        <node pkg="ceres_play"
+            type="ceres_play_node"
+            name="ceres_play_node"
+            output="screen">
+        </node>
+    </group>
+</launch>
